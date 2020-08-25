@@ -76,10 +76,10 @@ function luhnCheck(val) {
 
 const ccNumber = document.querySelector("#credit-card").value
 const ccValue = document.querySelector("#credit-card")
-    ccValue.addEventListener (function)
+    ccValue.addEventListener ('change', function() {
     if (ccValue.length !== 16) {
         ccValue.setCustomValidity("Credit card must be 16 digits")
     }
     else 
         ccValue.setCustomValidity("")
-    }
+    })
